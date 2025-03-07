@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="logo">
+            <h2>SHENA TAGALAG</h2>
+        </div>
+        
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#qualifications">Qualifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1>Hey there!</h1>
+
+                    <p>Welcome to my portfolio, here you'll know everything about me.</p>
+                    <div class="cta-buttons">
+                        <a href="Resume CV.pdf" class="btn primary-btn" download>Download CV</a>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">A bit about me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi there! I’m Shena S. Tagalag, a current sophomore student majoring in Computer Engineering 
+                        at National College of Science and Technology. I am certain that my degree will become my 
+                        path to a better future. My goal is to become an Engineer in the Computer Field. I have a 
+                        strong desire to continuously improve my knowledge and abilities. I've gone to a few seminars 
+                        about being a computer engineer. I understand that obstacles and difficulties are an inevitable 
+                        aspect of life. Contrarily, success involves accepting assistance from people who genuinely wish 
+                        to assist you as well as admitting your weaknesses.</p>
+                    
+                    
+
+    <!-- Qualifications Section -->
+    <section id="qualifications" class="qualifications-section">
+        <div class="container">
+            <h2 class="section-title">Qualifications</h2>
+            
+            
+            
+            <div class="skills">
+                <h3>Technical Skills</h3>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <div class="skill-name">HTML</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">CSS</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Web Design</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="text">
+                            <h3>Email</h3>
+                        <p>tagalag.shena@ncst.edu.ph</p>
+                    </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="text">
+                            <h3>Phone</h3>
+                        <p>+63 956 319 7502</p>
+                    </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="text">
+                            <h3>Address</h3>
+                        <p>Imus, Cavite</p>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.tiktok.com/" target="_blank" class="social-link">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.instagram.com/shn_tglg/" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/shenaaaaaaaaaaa.07/" target="_blank" class="social-link">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025. Shena S. Tagalag. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+
+    <script>
+        // Simple JavaScript for navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('show');
+                hamburger.classList.toggle('active');
+            });
+            
+            // Active link highlight
+            const navItems = document.querySelectorAll('.nav-links a');
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    navItems.forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Close mobile menu after clicking a link
+                    navLinks.classList.remove('show');
+                    hamburger.classList.remove('active');
+                });
+            });
+            
+            // Smooth scroll for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
